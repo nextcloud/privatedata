@@ -2,13 +2,14 @@
 <info>
 	<id>privatedata</id>
 	<name>Private Data API</name>
-	<description>
-		This app implements the OCS Private Data API
-	</description>
-	<licence>AGPL</licence>
+	<summary>Private data OCS API</summary>
+	<description>This app implements the OCS Private Data API</description>
+	<version>1.0.1</version>
+	<licence>agpl</licence>
 	<author>Roeland Jago Douma</author>
-	<version>1.0.0</version>
 	<namespace>PrivateData</namespace>
+	<category>integration</category>
+	<bugs>https://github.com/nextcloud/privatedata/issues</bugs>
 	<dependencies>
 		<nextcloud min-version="13" max-version="14" />
 	</dependencies>
