@@ -11,6 +11,6 @@
 	<category>integration</category>
 	<bugs>https://github.com/nextcloud/privatedata/issues</bugs>
 	<dependencies>
-		<nextcloud min-version="13" max-version="14" />
+		<nextcloud min-version="13" max-version="16" />
 	</dependencies>
 </info>
