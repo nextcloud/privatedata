@@ -24,7 +24,7 @@
 namespace OCA\PrivateData\Migration;
 
 use Doctrine\DBAL\Schema\Schema;
-use Doctrine\DBAL\Types\Type;
+use OCP\DB\Types;
 use OCP\Migration\SimpleMigrationStep;
 use OCP\Migration\IOutput;
 
@@ -44,7 +44,7 @@ class Version10000Date201707202147 extends SimpleMigrationStep {
 			$table = $schema->createTable('privatedata');
 
 			$table->addColumn('keyid',
-				Type::INTEGER,
+				Types::INTEGER,
 				[
 					'notnull' => true,
 					'length' => 4,
@@ -53,28 +53,28 @@ class Version10000Date201707202147 extends SimpleMigrationStep {
 				]
 			);
 			$table->addColumn('user',
-				Type::STRING,
+				Types::STRING,
 				[
 					'notnull' => true,
 					'length' => 64,
 				]
 			);
 			$table->addColumn('app',
-				Type::STRING,
+				Types::STRING,
 				[
 					'notnull' => true,
 					'length' => 255,
 				]
 			);
 			$table->addColumn('key',
-				Type::STRING,
+				Types::STRING,
 				[
 					'notnull' => true,
 					'length' => 255,
 				]
 			);
 			$table->addColumn('value',
-				Type::STRING,
+				Types::STRING,
 				[
 					'notnull' => true,
 					'length' => 255,
